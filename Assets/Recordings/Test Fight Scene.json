@@ -1,0 +1,197 @@
+{
+    "entryScene": "FightScene",
+    "recordingType": 0,
+    "recordedAspectRatio": {
+        "x": 321.0,
+        "y": 573.0
+    },
+    "recordedResolution": {
+        "x": 1920.0,
+        "y": 1080.0
+    },
+    "recordings": [],
+    "touchData": [
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 5.306354522705078,
+            "position": {
+                "x": 0.5112059712409973,
+                "y": 0.1480075865983963
+            },
+            "positional": false,
+            "scene": "FightScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "FightButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "BattleSystem/BattleCanvas/TextFieldEvent",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.1221696063876152,
+                "y": 0.18740710616111756
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.20802831649780274,
+            "position": {
+                "x": 0.5112059712409973,
+                "y": 0.1480075865983963
+            },
+            "positional": false,
+            "scene": "FightScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "FightButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "BattleSystem/BattleCanvas/TextFieldEvent",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.1221696063876152,
+                "y": 0.18740710616111756
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 17.781267166137697,
+            "position": {
+                "x": 0.4994663894176483,
+                "y": 0.14231498539447785
+            },
+            "positional": false,
+            "scene": "FightScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "FightButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "BattleSystem/BattleCanvas/TextFieldEvent",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": -0.005817335564643145,
+                "y": 0.10202808678150177
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.09799575805664063,
+            "position": {
+                "x": 0.4994663894176483,
+                "y": 0.14231498539447785
+            },
+            "positional": false,
+            "scene": "FightScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "FightButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "BattleSystem/BattleCanvas/TextFieldEvent",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": -0.005817335564643145,
+                "y": 0.10202808678150177
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 16.228546142578126,
+            "position": {
+                "x": 0.5208110809326172,
+                "y": 0.13092979788780213
+            },
+            "positional": false,
+            "scene": "FightScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "FightButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "BattleSystem/BattleCanvas/TextFieldEvent",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.2268851399421692,
+                "y": -0.06872895359992981
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.10805892944335938,
+            "position": {
+                "x": 0.5208110809326172,
+                "y": 0.13092979788780213
+            },
+            "positional": false,
+            "scene": "FightScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "FightButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "BattleSystem/BattleCanvas/TextFieldEvent",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.2268851399421692,
+                "y": -0.06872895359992981
+            }
+        },
+        {
+            "pointerId": 0,
+            "eventType": 0,
+            "timeDelta": 11.909988403320313,
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "positional": false,
+            "scene": "FightScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "playbackComplete",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        }
+    ]
+}

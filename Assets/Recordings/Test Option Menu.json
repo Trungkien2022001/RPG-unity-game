@@ -1,0 +1,145 @@
+{
+    "entryScene": "MenuScene(Updated)",
+    "recordingType": 0,
+    "recordedAspectRatio": {
+        "x": 321.0,
+        "y": 573.0
+    },
+    "recordedResolution": {
+        "x": 1920.0,
+        "y": 1080.0
+    },
+    "recordings": [],
+    "touchData": [
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 2.787860631942749,
+            "position": {
+                "x": 0.5058698058128357,
+                "y": 0.5218216180801392
+            },
+            "positional": false,
+            "scene": "MenuScene(Updated)",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "OptionsButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "Canvas/MainMenu",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.012585882097482682,
+                "y": -0.030535949394106866
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.20977401733398438,
+            "position": {
+                "x": 0.5058698058128357,
+                "y": 0.5218216180801392
+            },
+            "positional": false,
+            "scene": "MenuScene(Updated)",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "OptionsButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "Canvas/MainMenu",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.012585882097482682,
+                "y": -0.030535949394106866
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 4.78685188293457,
+            "position": {
+                "x": 0.5058698058128357,
+                "y": 0.2884250581264496
+            },
+            "positional": false,
+            "scene": "MenuScene(Updated)",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "BackButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "Canvas/OptionsMenu",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.032544560730457309,
+                "y": -0.02976190485060215
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.12703227996826173,
+            "position": {
+                "x": 0.5058698058128357,
+                "y": 0.2884250581264496
+            },
+            "positional": false,
+            "scene": "MenuScene(Updated)",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "BackButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "Canvas/OptionsMenu",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.032544560730457309,
+                "y": -0.02976190485060215
+            }
+        },
+        {
+            "pointerId": 0,
+            "eventType": 0,
+            "timeDelta": 2.641781806945801,
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "positional": false,
+            "scene": "MenuScene(Updated)",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "playbackComplete",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        }
+    ]
+}

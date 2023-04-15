@@ -1,0 +1,839 @@
+fileFormatVersion: 2
+guid: 253cb88704500ae4f9f05ac20c064d1d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3cfceea7e8dd7409e41b93bec46ba9
+      internalID: -1362747205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_1
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 768
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d1a17ed97031b4bab1246f11c4dcff
+      internalID: -847540861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_2
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 768
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cd7d6387429eb498ed3161a1f87847
+      internalID: 1992761746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_3
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 768
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b952ad43625311743b687cdd616725c8
+      internalID: 565846280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_4
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 768
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2389ae958be6c489e00a9129e17e9a
+      internalID: 1268470931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_5
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 768
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e9eb069cd64354b92a65e7a54498b1
+      internalID: 835894545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_6
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 768
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b803d125d0ac3644ad02d04639cd02b
+      internalID: 1222515487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_7
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 768
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335a0b2ed2d384f488f67f86825f166c
+      internalID: 1353626394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_8
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 768
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d54e23539452bb4e94052cf3732b38c
+      internalID: 170705981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_9
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 768
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bfe24338f594a489951ef8721f9267
+      internalID: -907126659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8012df0c461ffce46967d86535f1072b
+      internalID: 2125853905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_11
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 512
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b478c680bd50d1c40af6001efdeb074d
+      internalID: 1329684747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_12
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 512
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae5f5fbc80962b4aafdc4aa7bbbaa79
+      internalID: 1815700091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_13
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 512
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3578d7e2912e8ae48983cb91f6e58fbc
+      internalID: -1836161895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_14
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 512
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f79e4e4fa3bad4c9c99016f150324a
+      internalID: -170875782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_15
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 512
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a2477ceb5dc334fb8e7287f06b132b
+      internalID: 1435436958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_16
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 512
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e52cc759037454ea4d670fd431d0c3
+      internalID: -1715320159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_17
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 512
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2081ae49dd10ce44a21022510d3899b
+      internalID: -259395355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_18
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 512
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7343a3557cbe642976ca648d79ad83
+      internalID: -62946849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_19
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 512
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c1e4c12d7776940b2c9265f5eb89a2
+      internalID: 449889031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b62f53b3057024a94f51674ed83b29
+      internalID: -1530755571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_21
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 256
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723c341f74c758a49913794a3c5d0f76
+      internalID: -1855217198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_22
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 256
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4c8ab5bf36b99429726019ddd4152f
+      internalID: 819979528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_23
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 256
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bb2768251998142b3f092f6f657795
+      internalID: -1884577631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_24
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 256
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96bc2ce349db644bb2564cacd357563
+      internalID: -488607196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_25
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 256
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87ba25d5253ef2419bdb0ae88a47449
+      internalID: -967582996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_26
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 256
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25058eaa38e966141a9bfa31a761b92a
+      internalID: -1407303842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_27
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 256
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11da62194546b1a468ae7b0733b1f72b
+      internalID: 1396496228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_28
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 256
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ee8e9e7fdc6a14fb810b3f20594c88
+      internalID: 1546591019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_29
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 256
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ac1c3e2c98e7f409b32604678da92f
+      internalID: -284567462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8766f7a8d5eb619408d8dc4040345cd6
+      internalID: -2131329271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon_mushroom_explosion_transparency_31
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e59c08fd7edb44e8a2ae2263f8bfbb
+      internalID: 1957618017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      cartoon_mushroom_explosion_transparency_18: -62946849
+      cartoon_mushroom_explosion_transparency_29: -284567462
+      cartoon_mushroom_explosion_transparency_2: 1992761746
+      cartoon_mushroom_explosion_transparency_20: -1530755571
+      cartoon_mushroom_explosion_transparency_4: 1268470931
+      cartoon_mushroom_explosion_transparency_9: -907126659
+      cartoon_mushroom_explosion_transparency_13: -1836161895
+      cartoon_mushroom_explosion_transparency_15: 1435436958
+      cartoon_mushroom_explosion_transparency_1: -847540861
+      cartoon_mushroom_explosion_transparency_25: -967582996
+      cartoon_mushroom_explosion_transparency_30: -2131329271
+      cartoon_mushroom_explosion_transparency_21: -1855217198
+      cartoon_mushroom_explosion_transparency_3: 565846280
+      cartoon_mushroom_explosion_transparency_17: -259395355
+      cartoon_mushroom_explosion_transparency_0: -1362747205
+      cartoon_mushroom_explosion_transparency_7: 1353626394
+      cartoon_mushroom_explosion_transparency_26: -1407303842
+      cartoon_mushroom_explosion_transparency_28: 1546591019
+      cartoon_mushroom_explosion_transparency_24: -488607196
+      cartoon_mushroom_explosion_transparency_23: -1884577631
+      cartoon_mushroom_explosion_transparency_5: 835894545
+      cartoon_mushroom_explosion_transparency_12: 1815700091
+      cartoon_mushroom_explosion_transparency_19: 449889031
+      cartoon_mushroom_explosion_transparency_14: -170875782
+      cartoon_mushroom_explosion_transparency_10: 2125853905
+      cartoon_mushroom_explosion_transparency_6: 1222515487
+      cartoon_mushroom_explosion_transparency_8: 170705981
+      cartoon_mushroom_explosion_transparency_11: 1329684747
+      cartoon_mushroom_explosion_transparency_22: 819979528
+      cartoon_mushroom_explosion_transparency_31: 1957618017
+      cartoon_mushroom_explosion_transparency_27: 1396496228
+      cartoon_mushroom_explosion_transparency_16: -1715320159
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

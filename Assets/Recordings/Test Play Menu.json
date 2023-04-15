@@ -1,0 +1,405 @@
+{
+    "entryScene": "MenuScene(Updated)",
+    "recordingType": 0,
+    "recordedAspectRatio": {
+        "x": 321.0,
+        "y": 573.0
+    },
+    "recordedResolution": {
+        "x": 1920.0,
+        "y": 1080.0
+    },
+    "recordings": [],
+    "touchData": [
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 3.1515259742736818,
+            "position": {
+                "x": 0.5901814103126526,
+                "y": 0.7400379776954651
+            },
+            "positional": false,
+            "scene": "MenuScene(Updated)",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "PlayButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "Canvas/MainMenu",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.25788062810897829,
+                "y": -0.10905695706605911
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.12372183799743653,
+            "position": {
+                "x": 0.5901814103126526,
+                "y": 0.7400379776954651
+            },
+            "positional": false,
+            "scene": "MenuScene(Updated)",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "PlayButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "Canvas/MainMenu",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.25788062810897829,
+                "y": -0.10905695706605911
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 4.311656951904297,
+            "position": {
+                "x": 0.8879402279853821,
+                "y": 0.3757115602493286
+            },
+            "positional": true,
+            "scene": "SampleScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.12386035919189453,
+            "position": {
+                "x": 0.8879402279853821,
+                "y": 0.3757115602493286
+            },
+            "positional": true,
+            "scene": "SampleScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 0.628298282623291,
+            "position": {
+                "x": 0.35112059116363528,
+                "y": 0.48197343945503237
+            },
+            "positional": true,
+            "scene": "SampleScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.09501266479492188,
+            "position": {
+                "x": 0.34898611903190615,
+                "y": 0.48197343945503237
+            },
+            "positional": true,
+            "scene": "SampleScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 0.8611469268798828,
+            "position": {
+                "x": 0.10032016783952713,
+                "y": 0.9810246825218201
+            },
+            "positional": true,
+            "scene": "SampleScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.10105133056640625,
+            "position": {
+                "x": 0.1013874039053917,
+                "y": 0.9791271090507507
+            },
+            "positional": true,
+            "scene": "SampleScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 0.47306251525878909,
+            "position": {
+                "x": 0.4397011697292328,
+                "y": 0.9582542777061462
+            },
+            "positional": true,
+            "scene": "SampleScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.10233879089355469,
+            "position": {
+                "x": 0.44290289282798769,
+                "y": 0.9544591903686523
+            },
+            "positional": true,
+            "scene": "SampleScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 0.3021564483642578,
+            "position": {
+                "x": 0.7609391808509827,
+                "y": 0.7874763011932373
+            },
+            "positional": true,
+            "scene": "SampleScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.10883140563964844,
+            "position": {
+                "x": 0.7609391808509827,
+                "y": 0.7874763011932373
+            },
+            "positional": true,
+            "scene": "SampleScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 0.36454010009765627,
+            "position": {
+                "x": 0.802561342716217,
+                "y": 0.3870967626571655
+            },
+            "positional": true,
+            "scene": "SampleScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.09112834930419922,
+            "position": {
+                "x": 0.802561342716217,
+                "y": 0.3870967626571655
+            },
+            "positional": true,
+            "scene": "SampleScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": 0,
+            "eventType": 0,
+            "timeDelta": 1.0084028244018555,
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "positional": false,
+            "scene": "SampleScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "playbackComplete",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        }
+    ]
+}

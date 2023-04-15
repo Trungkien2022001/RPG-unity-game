@@ -1,0 +1,93 @@
+{
+    "entryScene": "MenuScene",
+    "recordingType": 0,
+    "recordedAspectRatio": {
+        "x": 1920.0,
+        "y": 30.0
+    },
+    "recordedResolution": {
+        "x": 1920.0,
+        "y": 1080.0
+    },
+    "recordings": [],
+    "touchData": [
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 3.8925483226776125,
+            "position": {
+                "x": 0.5144076943397522,
+                "y": 0.5388994216918945
+            },
+            "positional": false,
+            "scene": "MenuScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "PlayButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "Canvas/MainMenu",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.08884071558713913,
+                "y": 0.06259030848741532
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.20385050773620606,
+            "position": {
+                "x": 0.5165421366691589,
+                "y": 0.5388994216918945
+            },
+            "positional": false,
+            "scene": "MenuScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "PlayButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "Canvas/MainMenu",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.10200231522321701,
+                "y": 0.06259030848741532
+            }
+        },
+        {
+            "pointerId": 0,
+            "eventType": 0,
+            "timeDelta": 12.695524215698243,
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "positional": false,
+            "scene": "SampleScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "playbackComplete",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        }
+    ]
+}
