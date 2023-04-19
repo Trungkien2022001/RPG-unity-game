@@ -183,3 +183,14 @@ namespace TMPro.Examples
 
     }
 }
+//Đây là một script được viết bằng C# trong Unity. Nó thuộc về namespace TMPro.Examples và được gọi là VertexShakeB. Script này được sử dụng để tạo ra hiệu ứng rung động trên chữ. Các biến AngleMultiplier, SpeedMultiplier, CurveScale được sử dụng để điều chỉnh tốc độ và độ lớn của hiệu ứng.
+
+// Script này kế thừa MonoBehaviour và ghi đè các phương thức OnEnable, OnDisable, Awake, Start. Nó cũng sử dụng một sự kiện được phát ra bởi TMP để đăng ký hoặc hủy đăng ký một phương thức (ON_TEXT_CHANGED) được gọi khi text object được tái tạo.
+
+// Các phương thức Awake và OnEnable được sử dụng để lấy thông tin từ đối tượng m_TextComponent bằng cách sử dụng GetComponent<TMP_Text>(). Phương thức OnEnable cũng đăng ký phương thức ON_TEXT_CHANGED để đảm bảo rằng sự kiện này được xử lý khi có bất kỳ thay đổi nào liên quan đến text object. Phương thức OnDisable hủy đăng ký sự kiện để không còn xử lý khi đối tượng không được sử dụng nữa.
+
+// Phương thức Start được sử dụng để bắt đầu gọi phương thức coroutine AnimateVertexColors.
+
+// Phương thức ON_TEXT_CHANGED được sử dụng để kiểm tra xem obj đã được thay đổi chưa. Nếu obj = m_TextComponent thì biến hasTextChanged được thiết lập thành true.
+
+// Phương thức AnimateVertexColors là một coroutine sử dụng để tạo ra hiệu ứng rung động. Trong vòng lặp vô hạn, nó lấy thông tin về text object (textInfo), tạo ra một ma trận và một mảng copyOfVertices chứa tất cả các đỉnh của text object. Trong mỗi vòng lặp, nó lặp qua từng dòng của text object, sau đó lặp qua từng ký tự của mỗi dòng đó. Nếu ký tự đó không được hiển thị (isVisible = false), thì nó bỏ qua và tiếp tục với ký tự tiếp theo. Nếu ký tự được hiển thị, nó sẽ lấy thông tin về vertex, scale, matrix và matrix multiplication, sau đó cập nhật copyOfVertices. Cuối cùng, nó gọi phương thức m_TextComponent.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32) để cập nhật màu của các vertex. Hiệu ứng rung động được tạo ra bằng cách thay đổi vị trí, scale và màu sắc của các vertex.

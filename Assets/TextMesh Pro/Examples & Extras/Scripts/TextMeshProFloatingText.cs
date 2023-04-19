@@ -221,3 +221,15 @@ namespace TMPro.Examples
         }
     }
 }
+
+// Đây là đoạn code bằng ngôn ngữ lập trình C# và sử dụng Unity3D. Nó được viết để tạo văn bản màu sắc và hiển thị như là văn bản "đang bay".
+
+// Đoạn mã bao gồm một số biến và một số chức năng được thực hiện. Các biến bao gồm các thành phần GameObject, TextMeshPro, TextMesh và Transform để đặt văn bản trên các đối tượng trong game và cách thức hiển thị văn bản. Các chức năng bao gồm Awake (), Start (), Update () và DisplayTextMeshProFloatingText ().
+
+// Hàm Awake () được gọi khi đối tượng được tạo ra. Nó tạo một GameObject mới để chứa văn bản và lưu trữ các thành phần và thông số liên quan đến nó.
+
+// Hàm Start () được gọi khi đối tượng được kích hoạt. Nó thiết lập các thông số cơ bản cho văn bản hiển thị.
+
+// Hàm Update () được gọi liên tục để cập nhật hiển thị văn bản.
+
+// Hàm DisplayTextMeshProFloatingText () được sử dụng để hiển thị văn bản và di chuyển nó. Nó sử dụng một số hàm lặp để tạo hiệu ứng "bay" cho văn bản và tăng độ trong suốt để làm cho nó biến mất.

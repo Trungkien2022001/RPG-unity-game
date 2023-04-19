@@ -132,3 +132,15 @@ namespace TMPro.Examples
         }
     }
 }
+
+// Đây là một đoạn code trong Unity game engine được viết bằng ngôn ngữ C#. Nó cho phép hiển thị tốc độ khung hình (fps) và thời gian mili giây (ms) lên màn hình khi chơi game.
+
+// Đoạn code này có thể được phân chia thành các phần như sau:
+
+// Khai báo sử dụng các namespace UnityEngine và System.Collections.
+// Khai báo lớp public TMP_FrameRateCounter kế thừa từ lớp MonoBehaviour.
+// Khai báo một số biến và thuộc tính, bao gồm biến UpdateInterval kiểu float, m_LastInterval kiểu float, m_Frames kiểu int, AnchorPosition kiểu enum FpsCounterAnchorPositions, htmlColorTag kiểu string, fpsLabel kiểu string, m_TextMeshPro kiểu TextMeshPro, m_frameCounter_transform kiểu Transform và m_camera kiểu Camera.
+// Trong hàm Awake(), nếu lớp này được kích hoạt, đoạn code sẽ tạo một GameObject mới, gán cho nó một TextMeshPro component và đặt vị trí của nó dựa trên AnchorPosition. Nó cũng đặt font và font material cho text.
+// Trong hàm Start(), m_LastInterval được gán bằng Time.realtimeSinceStartup và m_Frames được gán bằng 0.
+// Trong hàm Update(), một số logic được thực hiện để tính toán tốc độ khung hình và thời gian mili giây và sau đó hiển thị chúng trên màn hình. Nó cũng có logic để chuyển đổi vị trí của frame counter dựa trên AnchorPosition.
+// Cuối cùng, hàm Set_FrameCounter_Position được sử dụng để thiết lập vị trí của frame counter dựa trên AnchorPosition.

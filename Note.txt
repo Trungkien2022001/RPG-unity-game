@@ -1,11 +1,11 @@
 Kiên
-- Assets\Characters\Player\PHealthManager.cs
-- Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark02.cs
-- Assets\TextMesh Pro\Examples & Extras\Scripts\ChatController.cs
-- Assets\TextMesh Pro\Examples & Extras\Scripts\ShaderPropAnimator.cs
-- Assets\TextMesh Pro\Examples & Extras\Scripts\SimpleScript.cs
-- Assets\TextMesh Pro\Examples & Extras\Scripts\TextMeshProFloatingText.cs
-- Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_FrameRateCounter.cs
+- Assets\Characters\Player\PHealthManager.cs //
+- Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark02.cs // 
+- Assets\TextMesh Pro\Examples & Extras\Scripts\ChatController.cs //
+- Assets\TextMesh Pro\Examples & Extras\Scripts\ShaderPropAnimator.cs 
+- Assets\TextMesh Pro\Examples & Extras\Scripts\SimpleScript.cs//
+- Assets\TextMesh Pro\Examples & Extras\Scripts\TextMeshProFloatingText.cs//
+- Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_FrameRateCounter.cs//
 - Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_TextInfoDebugTool.cs
 - Assets\TextMesh Pro\Examples & Extras\Scripts\TMPro_InstructionOverlay.cs
 - Assets\TextMesh Pro\Examples & Extras\Scripts\VertexShakeB.cs
@@ -59,3 +59,16 @@ Trang
 - Assets\KeyBoardInput.cs
 - Assets\PlayerController.cs
 -Assets\WordGenerator.cs
+
+
+
+start: start-all.cmd
+kiểm tra các file có trong hdfs: hdfs dfs -ls /
+copy một file trên máy lên hdfs: hdfs dfs -copyFromLocal /path/to/local/file(đường dẫn của file local) /path/to/hdfs/folder (đường dẫn của file copy vào hdfs)
+    Ví dụ hdfs dfs -copyFromLocal "E:\Downloadclone\vnedict.txt" /vnedict
+copy một file trên hdfs về máy local:  hdfs dfs -copyToLocal /path/to/hdfs/folder /path/to/local/file(đường dẫn của file local)
+đọc 1 file trên hdfs: hdfs dfs -cat /vnedict
+chạy mỗi datanode: ./hadoop-daemon.sh start datanode (trước khi chạy phải cd cmd vào thư mục bin của hdfs)
+kiểm tra namenode kết nối đến datanode chưa
+stop hdfs: stop-all.cmd
+xem địa chỉ ip: ipconfig (xong là chọn IPV4)

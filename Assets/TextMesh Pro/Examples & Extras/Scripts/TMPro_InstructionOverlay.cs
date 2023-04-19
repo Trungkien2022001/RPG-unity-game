@@ -82,3 +82,14 @@ namespace TMPro.Examples
         }
     }
 }
+
+// Đoạn code trên là một đoạn mã của một class được định nghĩa trong namespace TMPro.Examples. Class này là lớp MonoBehaviour và kế thừa từ lớp MonoBehaviour của Unity, vì vậy nó có thể được sử dụng trong các đối tượng GameObject của Unity. Nói cách khác, đoạn mã này được sử dụng để thêm một chức năng cho các đối tượng trong trò chơi được tạo bởi Unity.
+
+// Đoạn mã này bao gồm các thành phần sau:
+
+// Khai báo enum FpsCounterAnchorPositions để định nghĩa các vị trí mà một chữ số đếm khung hình được hiển thị trên màn hình.
+// Khai báo biến AnchorPosition để lưu trữ vị trí đếm khung hình.
+// Khai báo biến instructions để lưu trữ một chuỗi hướng dẫn.
+// Khai báo các biến private để lưu trữ các thành phần trong đối tượng GameObject được tạo bởi class này, bao gồm: m_TextMeshPro (là một đối tượng TextMeshPro để hiển thị thông tin đếm khung hình), m_textContainer (là một đối tượng TextContainer để lưu trữ vị trí đếm khung hình), m_frameCounter_transform (là một đối tượng Transform để lưu trữ vị trí của đối tượng hiển thị đếm khung hình trên màn hình), và m_camera (là một đối tượng Camera để định vị trí đếm khung hình trên màn hình).
+// Các phương thức Awake() và Set_FrameCounter_Position() để thiết lập đối tượng đếm khung hình và vị trí hiển thị của nó trên màn hình.
+// Đoạn mã cũng có sử dụng các hàm được định nghĩa sẵn của Unity để tạo ra đối tượng hiển thị thông tin đếm khung hình trên màn hình.

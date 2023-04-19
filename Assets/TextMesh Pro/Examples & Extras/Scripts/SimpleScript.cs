@@ -56,3 +56,9 @@ namespace TMPro.Examples
 
     }
 }
+
+// Đây là một đoạn code đơn giản cho việc hiển thị một chuỗi văn bản có độ dài thay đổi theo thời gian trong một TextMeshPro Component của Unity.
+
+// Cụ thể, đoạn code sẽ tạo ra một đối tượng TextMeshPro và đặt các thuộc tính của nó, bao gồm cỡ chữ, căn chỉnh văn bản, và chế độ bọc từ. Mỗi khung hình (frame) trong Update() sẽ cập nhật đối tượng TextMeshPro để hiển thị một chuỗi văn bản được định dạng bằng chuỗi format label và giá trị của biến m_frame.
+
+// Để làm được điều này, đoạn code sử dụng phương thức SetText() để thiết lập giá trị của đối tượng TextMeshPro bằng cách chuyển chuỗi format label và giá trị của biến m_frame dưới dạng đối số. Ngoài ra, mỗi khung hình, biến m_frame được tăng lên với giá trị delta time để tạo hiệu ứng chuỗi văn bản có độ dài thay đổi theo thời gian.
