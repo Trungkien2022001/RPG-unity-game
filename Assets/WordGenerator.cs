@@ -43,3 +43,7 @@ public class WordGenerator : MonoBehaviour
         return sentences[index];
     }
 }
+
+// Đoạn code trên định nghĩa một class `WordGenerator` để sinh ra các câu hỏi / từ vựng cho trò chơi.
+// Hàm `GenerateDict()` tạo ra một mảng các từ vựng ngẫu nhiên trong một tệp văn bản, được lưu trữ dưới dạng một mảng các chuỗi `words`. Đặc biệt, hàm sử dụng `stream reader` để đọc và hiển thị các dòng từ tệp văn bản cho đến khi hết dữ liệu được đọc vào.
+// Hàm `GenerateSentence()` sẽ chọn ngẫu nhiên một câu hỏi của trò chơi từ tệp văn bản được truyền vào qua đối số `sentences`. Sau đó, hàm sử dụng đối tượng `System.Random` để chọn ra index ngẫu nhiên phù hợp với câu hỏi đã định nghĩa, từ đó trả về một chuỗi câu hỏi ngẫu nhiên từ `sentences`.

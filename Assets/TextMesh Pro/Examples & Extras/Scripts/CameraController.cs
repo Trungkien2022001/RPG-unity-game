@@ -7,6 +7,17 @@ namespace TMPro.Examples
     
     public class CameraController : MonoBehaviour
     {
+        // Lớp CameraController kế thừa từ MonoBehaviour và được sử dụng để điều khiển việc di chuyển của camera trong trò chơi.
+        // Biến cameraTransform được sử dụng để lưu trữ thông tin vị trí và hướng của camera. Biến dummyTarget được sử dụng như mục tiêu giả lập để camera di chuyển theo, giúp tránh khúc mắc khi nhầm lẫn với đối tượng được theo dõi.
+        // Biến CameraTarget được sử dụng để đặt đối tượng mà camera sẽ theo dõi.
+        // Biến FollowDistance là khoảng cách từ camera đến CameraTarget khi ở chế độ Follow. Biến MaxFollowDistance và MinFollowDistance là khoảng cách tối đa và tối thiểu mà camera có thể đến từ CameraTarget.
+        // Biến ElevationAngle là góc nghiêng camera quanh hướng chiều thẳng đứng (hướng lên trên). Biến MaxElevationAngle và MinElevationAngle là giá trị tối đa và tối thiểu của góc nghiêng camera.
+        // Biến OrbitalAngle là góc quay camera quanh CameraTarget.
+        // Biến CameraMode là enum CameraModes, đại diện cho các chế độ camera Follow, Isometric và Free.
+        // Biến MovementSmoothing và RotationSmoothing được sử dụng để đánh dấu việc sử dụng hoặc không sử dụng smoothing cho chuyển động và xoay của camera. MovementSmoothingValue và RotationSmoothingValue là giá trị mà smoothing có thể được thiết lập.
+        // Biến MoveSensitivity là độ nhậy của chuyển động khi camera di chuyển.
+        // Biến currentVelocity, desiredPosition, mouseX, mouseY, moveVector, và mouseWheel là các biến được sử dụng để điều khiển việc di chuyển của camera và xoay camera.
+        // Hai biến hằng sử dụng để đặt các trường hợp cho sử kiện slider.
         public enum CameraModes { Follow, Isometric, Free }
 
         private Transform cameraTransform;
@@ -49,7 +60,11 @@ namespace TMPro.Examples
         private const string event_SmoothingValue = "Slider - Smoothing Value";
         private const string event_FollowDistance = "Slider - Camera Zoom";
 
-
+        // Hàm Awake() được gọi khi đối tượng được kích hoạt và được sử dụng để thiết lập các giá trị ban đầu cho camera.
+        // Nếu vSync được đặt thành 1, thì mục tiêu FrameRate là 60 khung hình/giây, ngược lại thì mục tiêu là không giới hạn.
+        // Nếu ứng dụng đang chạy trên thiết bị iOS hoặc Android, thì việc simuluatte Mouse sẽ không được kích hoạt.
+        // Biến cameraTransform được thiết lập để chứa thông tin về vị trí và hướng của camera.
+        // previousSmoothing là giá trị đánh dấu cho việc smoothing đã được sử dụng hay không.
         void Awake()
         {
             if (QualitySettings.vSyncCount > 0)
@@ -65,6 +80,8 @@ namespace TMPro.Examples
         }
 
 
+        // Hàm Start() được gọi một lần khi đối tượng đã có Active và được sử dụng để thiết lập camera target.
+        // Nếu CameraTarget không được gán, một đối tượng giả lập được tạo ra và sử dụng để đại diện cho mục tiêu giả lập trung tâm của cảnh. Khi đó, CameraTarget sẽ được đặt là đối tượng giả lập này.
         // Use this for initialization
         void Start()
         {
@@ -76,6 +93,11 @@ namespace TMPro.Examples
             }
         }
 
+        // Hàm LateUpdate() được gọi sau mỗi Update() và được sử dụng để điều khiển các chuyển động của camera.
+        // Hàm GetPlayerInput() được gọi để xử lý các chuẩn đế của người chơi như di chuyển hoặc xoay camera.
+        // Kiểm tra nếu CameraTarget vẫn còn hiệu lực. Nếu có, vị trí mà camera muốn đến sẽ được tính toán dựa trên các thông số cài đặt của camera như khoảng cách theo trục z, góc nghiêng và góc quay.
+        // Nếu đang sử dụng smoothing cho chuyển động, camera sẽ được di chuyển theo từng khung hình dựa trên giá trị currentVelocity và MovementSmoothingValue. Nếu không sử dụng smoothing, camera sẽ di chuyển một lần đến vị trí mới.
+        // Nếu đang sử dụng smoothing cho xoay camera, camera sẽ được xoay từ vị trí hiện tại đến vị trí mới dựa trên RotationSmoothingValue. Nếu không sử dụng Smoothing, camera sẽ tự động xoay để nhìn về CameraTarget.
         // Update is called once per frame
         void LateUpdate()
         {
@@ -122,7 +144,15 @@ namespace TMPro.Examples
         }
 
 
-
+        // Hàm GetPlayerInput() được gọi trong LateUpdate() để xử lý các chuẩn độ của người chơi, bao gồm phím và chuyển động của chuột.
+        // Đầu tiên, hàm sẽ đặt moveVector là Vector3.zero, tức là không có chuyển động gì, và lấy giá trị của mouseWheel từ Input.GetAxis("Mouse ScrollWheel").
+        // Nếu người chơi nhấn phím Shift hoặc có chạm trên thiết bị di động, giá trị của mouseWheel sẽ được nhân với 10.
+        // Nếu người chơi nhấn các phím I, F, S trên bàn phím, thì camera sẽ chuyển đổi giữa các chế độ, và các nhấn đóng hoặc mở chế độ Smoothing.
+        // Nếu người chơi nhấn chuột phải, thì camera sẽ được xoay theo chuyển động của chuột trên trục Y và X, ứng với ElevationAngle và OrbitalAngle của camera. Nếu đang sử dụng thiết bị di động, chuyển động tương tự cũng có thể được thực hiện.
+        // Nếu người chơi nhấn chuột trái, một Raycast sẽ được thực hiện để tìm ra đối tượng mà ta muốn chọn làm CameraTarget. Nếu đối tượng này đã được chọn, sẽ thiết lập OrbitalAngle thành 0. Nếu chưa, một đối tượng giả lập sẽ được tạo ra để làm CameraTarget và Smoothing sẽ được đặt lại.
+        // Nếu người chơi nhấn chuột trung, camera sẽ bị kéo theo theo chuyển động của chuột. Nếu đang sử dụng thiết bị di động, chuyển động kéo cũng có thể được thực hiện.
+        // Nếu người chơi sử dụng cảm ứng hai ngón tay (pinch), camera sẽ zoom vào hoặc ra.
+        // Cuối cùng, nếu người chơi cuộn chuột, camera sẽ zoom vào hoặc ra.
         void GetPlayerInput()
         {
             moveVector = Vector3.zero;

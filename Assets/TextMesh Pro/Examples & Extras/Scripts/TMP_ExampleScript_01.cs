@@ -62,3 +62,7 @@ namespace TMPro.Examples
 
     }
 }
+// Đây là script TMP_ExampleScript_01 được sử dụng để cập nhật và tùy chỉnh văn bản trên các đối tượng TMP_Text hoặc TMP_TextMeshProUGUI.
+// Script này bao gồm hai biến ObjectType và isStatic. Biến ObjectType được sử dụng để xác định đối tượng sẽ sử dụng đối tượng TMP_Text hoặc TMP_TextMeshProUGUI. Biến isStatic được sử dụng để xác định xem văn bản có thay đổi động hay không.
+// Trong hàm Awake(), script được sử dụng để thiết lập văn bản và tùy chỉnh hoạt động của đối tượng TMP_Text hoặc TMP_TextMeshProUGUI. Hàm Load a new font asset được sử dụng để tải một phông chữ mới từ tài nguyên và gán nó vào đối tượng văn bản. Hàm Load a new material preset được sử dụng để tải một chất liệu này từ tài nguyên và gán nó vào đối tượng văn bản. Hàm Set the size of the font được sử dụng để thiết lập kích thước của phông chữ. Hàm Set the text được sử dụng để thiết lập nội dung văn bản. Hàm Get the preferred width and height được sử dụng để tính toán kích thước của đối tượng văn bản dựa trên chiều rộng và chiều cao được cung cấp và cập nhật kích thước của đối tượng RectTransform dựa trên giá trị này.
+// Trong hàm Update(), nếu isStatic được thiết lập thành false, script sẽ tăng biến count thêm 1 và cập nhật văn bản sử dụng hàm SetText.

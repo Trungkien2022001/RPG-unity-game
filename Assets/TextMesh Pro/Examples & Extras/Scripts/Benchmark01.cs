@@ -4,10 +4,15 @@ using System.Collections;
 
 namespace TMPro.Examples
 {
-    
+
     public class Benchmark01 : MonoBehaviour
     {
-
+        // Lớp Benchmark01 kế thừa từ MonoBehaviour và được sử dụng để đo hiệu suất của các phần mềm đồ họa.
+        // Biến BenchmarkType được sử dụng để thiết lập kiểu đo hiệu suất, mặc định là 0.
+        // Biến TMProFont được sử dụng để lưu trữ phông chữ đã đặt theo dạng TextMesh Pro FontAsset. Biến TextMeshFont được sử dụng để lưu trữ phông chữ đã đặt theo dạng TextMesh.
+        // Biến m_textMeshPro được sử dụng để lưu trữ đối tượng TextMeshPro, biến m_textContainer được sử dụng để lưu trữ đối tượng TextContainer của TextMeshPro và biến m_textMesh được sử dụng để lưu trữ đối tượng TextMesh.
+        // Chuỗi label01 là một biến hằng chứa định dạng chuỗi cho TextMeshPro. Chuỗi label02 là một biến hằng chứa định dạng chuỗi cho TextMesh.
+        // Các biến m_material01 và m_material02 được sử dụng để lưu trữ tài liệu để áp dụng cho đối tượng văn bản.
         public int BenchmarkType = 0;
 
         public TMP_FontAsset TMProFont;
@@ -27,7 +32,11 @@ namespace TMPro.Examples
         private Material m_material02;
 
 
-
+        // Hàm IEnumerator Start() được sử dụng để bắt đầu tính toán hiệu suất.
+        // Nếu biến BenchmarkType được đặt là 0, một đối tượng TextMeshPro sẽ được thêm vào đối tượng được gán cho biến gameObject. Nếu TMProFont khác null, font được sử dụng của đối tượng TextMeshPro sẽ được gán cho giá trị của biến TMProFont. Kích thước font của đối tượng TextMeshPro được đặt là 48 và canh chỉnh trong trung tâm. Biến m_material01 sẽ được sử dụng cho material mặc định của đối tượng TextMeshPro.
+        // Nếu biến BenchmarkType được đặt là 1, một đối tượng TextMesh sẽ được thêm vào đối tượng được gán cho biến gameObject. Nếu biến TextMeshFont khác null, font sẽ được sử dụng của đối tượng TextMesh sẽ được gán cho giá trị của biến TextMeshFont. Kích thước font của đối tượng TextMesh được đặt là 48 và được căn giữa.
+        // Cả hai loại đối tượng văn bản này sẽ được lặp lại 1000000 lần và được cập nhật với các giá trị định dạng chuỗi tương ứng với mỗi lần lặp lại để đo hiệu suất. Nếu BenchmarkType là 0, font materials được chuyển đổi giữa m_material01 và m_material02 với mỗi 1000 bước lặp lại.
+        // Cuối cùng, yield return null sẽ được sử dụng để dừng việc tính toán hiệu suất.
         IEnumerator Start()
         {
 
@@ -54,7 +63,7 @@ namespace TMPro.Examples
                 //m_textMeshPro.fontSharedMaterial.SetFloat("_OutlineWidth", 0.2f);
                 //m_textMeshPro.fontSharedMaterial.EnableKeyword("UNDERLAY_ON");
                 //m_textMeshPro.lineJustification = LineJustificationTypes.Center;
-                m_textMeshPro.enableWordWrapping = false;    
+                m_textMeshPro.enableWordWrapping = false;
                 //m_textMeshPro.lineLength = 60;          
                 //m_textMeshPro.characterSpacing = 0.2f;
                 //m_textMeshPro.fontColor = new Color32(255, 255, 255, 255);

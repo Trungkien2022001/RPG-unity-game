@@ -8,6 +8,13 @@ namespace TMPro.Examples
     public class VertexShakeA : MonoBehaviour
     {
 
+        // Đây là script VertexShakeA được sử dụng để tạo hiệu ứng rung các đỉnh của văn bản đối với đối tượng TMP_Text.
+        // Script này bao gồm các biến AngleMultiplier, SpeedMultiplier, ScaleMultiplier và RotationMultiplier, được sử dụng để điều chỉnh đầu vào và hiệu ứng của văn bản.
+        // Hàm Awake() được sử dụng để lấy tham chiếu đến đối tượng TMP_Text.
+        // Hàm OnEnable() và OnDisable() được sử dụng để đăng ký và hủy đăng ký sự kiện TMPRO_EventManager.TEXT_CHANGED_EVENT, sự kiện sẽ được kích hoạt khi đối tượng văn bản được phục hồi.
+        // Hàm Start() được sử dụng để bắt đầu Coroutine để tạo hiệu ứng rung các đỉnh.
+        // Hàm ON_TEXT_CHANGED() được sử dụng để đánh dấu là văn bản được thay đổi khi TEXT_CHANGED_EVENT được kích hoạt.
+        // Thông thường, script này sẽ cần thêm các hàm khác để thực hiện hiệu ứng rung các đỉnh và cập nhật văn bản, tùy thuộc vào thiết kế cụ thể của ứng dụng.
         public float AngleMultiplier = 1.0f;
         public float SpeedMultiplier = 1.0f;
         public float ScaleMultiplier = 1.0f;
@@ -46,6 +53,14 @@ namespace TMPro.Examples
                 hasTextChanged = true;
         }
 
+        // Đây là hàm AnimateVertexColors được sử dụng để tạo hiệu ứng rung các đỉnh văn bản trên đối tượng TMP_Text.
+        // Đầu tiên, hàm sử dụng ForceMeshUpdate để cập nhật thông tin văn bản của đối tượng TMP_Text.
+        // Sau đó, hàm lấy thông tin về văn bản và tạo ma trận lưu trữ tạm thời cho các đỉnh của văn bản.
+        // Hàm sử dụng vòng lặp while để thực hiện hiệu ứng rung các đỉnh.
+        // Dòng lệnh "if (hasTextChanged)" được sử dụng để kiểm tra xem văn bản có bị thay đổi hay không, nếu có, hàm sẽ cấp phát lại ma trận lưu trữ tạm thời cho các đỉnh.
+        // Hàm dùng để tính toán trung tâm của mỗi dòng và xoay động các ký tự của mỗi dòng, sau đó dùng ma trận để thực hiện các thay đổi trong vòng lặp. Hàm dùng để cập nhật lại cấu trúc mạng của dữ liệu đồ họa của văn bản được thiết lập trên đối tượng TMP_Text.
+        // Hàm kết thúc bằng lệnh WaitForSeconds() để chờ đợi một khoảng thời gian nhất định giữa các lần rung đỉnh văn bản.
+        // Hàm được thực thi liên tục cho đến khi lệnh break được thực hiện hoặc đối tượng bị tắt.
         /// <summary>
         /// Method to animate vertex colors of a TMP Text object.
         /// </summary>

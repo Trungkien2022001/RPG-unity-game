@@ -5,9 +5,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-
 public class PlayerController : MonoBehaviour
 {
+    // Đoạn code trên định nghĩa một class `PlayerControl` để điều khiển các hoạt động di chuyển của nhân vật người chơi. Các thuộc tính và đối tượng được sử dụng trong class bao gồm:
+    // `moveSpeed`: tốc độ di chuyển của nhân vật, được định nghĩa qua một số thực.
+    // `collisionOffset`: giá trị thêm vào khoảng cách chạm để xử lý va chạm.
+    // `movementFilter`: bộ lọc va chạm, được dùng để xử lý va chạm giữa nhân vật và các đối tượng khác trong môi trường.
+    // `enemySelect`: đối tượng đại diện cho kẻ thù của game.
+    // `player`: đối tượng đại diện cho nhân vật người chơi.
+    // `musicControl`: đối tượng điều khiển âm nhạc.
+    // Các hàm được định nghĩa trong class bao gồm:
+    // Hàm `Start()` được gọi khi bắt đầu trò chơi. Hàm sẽ kiểm tra trường hợp đang tiếp tục chơi hoặc trở về từ màn hình chiến đấu trước đó để đặt lại trò chơi qua việc sử dụng `PlayerPrefs`. Sau đó, hàm sẽ khởi tạo các biến và đối tượng cần thiết cho trò chơi.
+    // Hàm `FixedUpdate()` được gọi mỗi khung hình để xử lý các hoạt động di chuyển của nhân vật. Hàm sử dụng `Input.GetAxisRaw()` để bắt đầu và kết thúc các hoạt động di chuyển dọc và ngang của nhân vật. Sau đó, công thức di chuyển được tính bằng cách nhân hướng, thời gian và tốc độ của nhân vật với nhau và gán giá trị đó cho thuộc tính `movementInput`.
+    // Các hàm `Move()` và `SetMoving()`, `StartMoving()` và `StopMoving()` được sử dụng để xử lý các hoạt động di chuyển của nhân vật. Hàm `CastCollisions()` được sử dụng để xác định xem nhân vật có va chạm với các đối tượng khác trong môi trường hay không.
+    // Hàm `DestroyEnemy()` được sử dụng để xóa đối tượng kẻ thù khỏi môi trường sau khi nhân vật đã chiến thắng.
     public float moveSpeed = 1f;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
@@ -69,7 +80,14 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         musicControl = GameObject.FindGameObjectWithTag(MusicControl.MUSIC_CONTROLER_TAG).GetComponent<MusicControl>();
     }
-
+    // Các hàm được định nghĩa trong class `PlayerControl` bao gồm:
+    // Hàm `toRun()` được sử dụng trong trường hợp nhân vật muốn thực hiện cử chỉ chạy. Hàm tạm dừng hoạt động của collider để xử lý chuyển động chạy.
+    // Hàm `Awake()` được gọi khi khởi tạo đối tượng `PlayerControl`. Hàm được sử dụng để đọc dữ liệu từ `PlayerPrefs` khi hoạt động bắt đầu.
+    // Các hàm `PlayerPosSave()` và `PlayerPosLoad()` được sử dụng để lưu và trả về vị trí hiện tại của nhân vật trong trò chơi.
+    // Hàm `TryMove()` được sử dụng để xác định xem có va chạm giữa nhân vật và môi trường hoặc kẻ thù. Nếu không, nhân vật sẽ di chuyển trong hướng được xác định bởi `direction`.
+    // Hàm `OnMove()` được gọi khi người chơi bắt đầu nhập vào lệnh chuyển động. Hàm sử dụng `movementValue` để xác định hướng di chuyển của nhân vật.
+    // Hàm `FixedUpdate()` được gọi mỗi khung hình để cập nhật cho chuyển động di chuyển. Hàm sử dụng `animator` và `spriteRenderer` để cập nhật trạng thái di chuyển và phản chiếu nhân vật, tùy thuộc vào hướng di chuyển.
+    // Hàm `DestroyEnemy()` được sử dụng để xóa các kẻ thù trong trò chơi sau khi nhân vật đã chiến thắng. Hàm sử dụng `GameObject.Find()` và `Destroy()` để xóa các đối tượng kẻ thù.
     IEnumerator toRun()
     {
         GetComponent<Collider2D>().isTrigger = false;
@@ -196,7 +214,17 @@ public class PlayerController : MonoBehaviour
     }
 
 
-
+    // Hàm `OnTriggerEnter2D()` trong class `PlayerControl` được sử dụng để xử lý sự kiện va chạm giữa nhân vật và kẻ thù trong trò chơi. Các hàm và đối tượng được sử dụng trong hàm bao gồm:
+    // `PlayerPrefs`: lưu trữ và truy xuất các thông tin và thay đổi trạng thái của nhân vật trong trò chơi.
+    // `SwitchScene()`: chuyển đổi từ màn hình hiện tại đến màn hình tiếp theo.
+    // `LoadScene()`: tải màn hình mới sau khi chuyển đổi.
+    // `animator`: đối tượng sử dụng các trạng thái và hoạt động di chuyển của nhân vật.
+    // `musicControl`: đối tượng điều khiển âm nhạc.
+    // `spriteRenderer`: đối tượng quản lý hình ảnh của nhân vật.
+    // Các lệnh và hoạt động của hàm `OnTriggerEnter2D()` bao gồm:
+    // Nếu nhân vật đang trong trạng thái chạy, collider của kẻ thù sẽ được đặt vào chế độ isTrigger sau 2 giây.
+    // Nếu nhân vật chạm vào kẻ thù, trạng thái hiện tại của nhân vật sẽ được lưu vào `PlayerPrefs` và các hoạt động đánh kiếm và chuyển đổi scene được thực hiện.
+    // Hàm `SwordAttack()` và `Hide()` được sử dụng để quản lý việc tấn công và hiển thị của nhân vật trong quá trình chuyển đổi scene.
     IEnumerator OnTriggerEnter2D(Collider2D other) {
         print("Touch enemy in player");
         if (PlayerPrefs.GetInt("IsRun") == 1)

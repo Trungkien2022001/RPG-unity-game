@@ -67,3 +67,9 @@ namespace TMPro.Examples
         }
     }
 }
+// Đây là thành phần script được tạo bởi TextMeshPro để xoay các đối tượng.
+// Trong script này, việc thực hiện xoay đối tượng được quyết định bởi giá trị của biến MotionType. Nếu MotionType được đặt là "Rotation", đối tượng sẽ xoay vô hạn theo trục y với tốc độ SpinSpeed được thiết lập.
+// Nếu MotionType được đặt là "BackAndForth", đối tượng sẽ xoay với độ lệch hướng giữa mức ban đầu và một góc trong khoảng [-RotationRange, RotationRange] xung quanh trục y.
+// Nếu MotionType được đặt là "Translation", đối tượng sẽ di chuyển lên xuống hoặc trái phải theo hướng xác định bởi hàm Cos.
+// Lưu ý rằng việc hoạt động của đối tượng không bị giới hạn bởi khoảng RotationRange nếu đang được xoay hoặc di chuyển. Mathf.Sin và Mathf.Cos được sử dụng để tạo ra các chuyển động mượt mà.
+// Một phần của script chứa các đoạn mã đang được để lại trong tình trạng bình luận. Chúng có thể được sử dụng để vẽ các mẫu ánh sáng khi chuyển động các đối tượng, nhưng hiện tại chúng không được hoạt động trong code này.
