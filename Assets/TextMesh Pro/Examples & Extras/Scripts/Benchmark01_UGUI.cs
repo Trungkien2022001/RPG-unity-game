@@ -31,7 +31,11 @@ namespace TMPro.Examples
         private Material m_material01;
         private Material m_material02;
 
-
+/*Nó được sử dụng để đo hiệu suất của hai thành phần văn bản trong Unity: TextMesh Pro và TextMesh. 
+Đoạn code tạo ra một Canvas và thêm một thành phần văn bản vào đó, sau đó thực hiện một vòng lặp từ 0 đến 1000000 
+để cập nhật văn bản trên màn hình với mỗi giá trị của vòng lặp. Nếu BenchmarkType được đặt thành 0, nó sẽ sử dụng TextMesh Pro, 
+còn nếu BenchmarkType là 1, nó sẽ sử dụng TextMesh. Mỗi lần vòng lặp được thực hiện, 
+văn bản được cập nhật với một giá trị đếm, và sau đó chuyển đổi giữa hai vật liệu để hiển thị hiệu ứng trên màn hình.*/
 
         IEnumerator Start()
         {

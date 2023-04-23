@@ -33,7 +33,9 @@ namespace TMPro.Examples
         private Matrix4x4 m_matrix;
 
         private TMP_MeshInfo[] m_cachedMeshInfoVertexData;
-
+/*Awake(): được gọi khi script được kích hoạt. Trong phương thức này, script lấy tham chiếu đến TextMeshProUGUI của đối tượng, 
+đối tượng Canvas và Camera, tạo đối tượng pop-up text object để hiển thị thông tin về từ và liên kết, và lưu trữ thông tin về các 
+mesh vertices trong đối tượng TextMeshProUGUI.*/
         void Awake()
         {
             m_TextMeshPro = gameObject.GetComponent<TextMeshProUGUI>();
@@ -53,21 +55,23 @@ namespace TMPro.Examples
             m_TextPopup_TMPComponent = m_TextPopup_RectTransform.GetComponentInChildren<TextMeshProUGUI>();
             m_TextPopup_RectTransform.gameObject.SetActive(false);
         }
-
+/*OnEnable(): được gọi khi script được kích hoạt. Trong phương thức này, 
+script đăng ký sự kiện được gửi đi khi đối tượng TextMeshProUGUI được tạo lại.*/
 
         void OnEnable()
         {
             // Subscribe to event fired when text object has been regenerated.
             TMPro_EventManager.TEXT_CHANGED_EVENT.Add(ON_TEXT_CHANGED);
         }
-
+/*OnDisable(): được gọi khi script bị vô hiệu hóa. Trong phương thức này, script hủy đăng ký sự kiện đã đăng ký trong phương thức OnEnable().*/
         void OnDisable()
         {
             // UnSubscribe to event fired when text object has been regenerated.
             TMPro_EventManager.TEXT_CHANGED_EVENT.Remove(ON_TEXT_CHANGED);
         }
 
-
+/*ON_TEXT_CHANGED(): phương thức được gọi khi sự kiện TEXT_CHANGED_EVENT được gửi đi bởi đối tượng TextMeshProUGUI. 
+Trong phương thức này, script cập nhật thông tin về các mesh vertices trong đối tượng TextMeshProUGUI.*/
         void ON_TEXT_CHANGED(Object obj)
         {
             if (obj == m_TextMeshPro)
@@ -77,7 +81,18 @@ namespace TMPro.Examples
             }
         }
 
+/*Nó được sử dụng để xử lý việc lựa chọn ký tự và từ trong văn bản, và áp dụng các hiệu ứng 
+khác nhau khi người dùng tương tác với chúng.
 
+Khi người dùng di chuột qua một ký tự trong văn bản TextMeshPro, đoạn mã tìm vị trí ký tự giao nhau và làm nổi bật nó bằng cách 
+co giãn nó lên và thay đổi màu sắc. Khi người dùng nhấp chuột vào một ký tự trong khi giữ phím Shift trái hoặc phải, 
+đoạn mã hoán đổi ký tự đã chọn với ký tự cuối cùng trong mảng meshInfo, đảm bảo rằng ký tự đã chọn được hiển thị cuối cùng.
+
+Tương tự, khi người dùng di chuột qua một từ, đoạn mã tìm vị trí từ giao nhau và thay đổi màu của mỗi ký tự trong từ đó sang màu mới. 
+Nếu người dùng đã chọn một từ trước đó và sau đó di chuột qua một từ khác, đoạn mã sẽ xóa lựa chọn từ trước đó.
+
+Tổng thể, đoạn mã này cho phép lựa chọn và điều chỉnh văn bản tương tác, có thể hữu ích trong các ngữ cảnh trò chơi hoặc 
+giao diện người dùng khác nhau.*/
         void LateUpdate()
         {
             if (isHoveringObject)
@@ -289,14 +304,16 @@ namespace TMPro.Examples
             
         }
 
-
+/*phương thức OnPointerEnter() được gọi khi con trỏ chuột di chuyển vào vùng giới hạn của đối tượng, 
+trong đó biến isHoveringObject được gán giá trị true để đánh dấu rằng chuột đang nằm trên đối tượng.*/
         public void OnPointerEnter(PointerEventData eventData)
         {
             //Debug.Log("OnPointerEnter()");
             isHoveringObject = true;
         }
 
-
+/*Phương thức OnPointerExit() được gọi khi con trỏ chuột rời khỏi vùng giới hạn của đối tượng, 
+trong đó biến isHoveringObject được gán giá trị false để đánh dấu rằng chuột đã rời khỏi đối tượng.*/
         public void OnPointerExit(PointerEventData eventData)
         {
             //Debug.Log("OnPointerExit()");
@@ -452,7 +469,26 @@ namespace TMPro.Examples
             //Debug.Log("OnPointerUp()");
         }
 
+/* "RestoreCachedVertexAttributes", chịu trách nhiệm khôi phục lại các đỉnh được lưu trữ, màu đỉnh và 
+UV cho một ký tự cụ thể của đối tượng TextMeshPro.
 
+Phương thức nhận một số nguyên "index" làm đối số, đó là chỉ mục của ký tự trong văn bản mà các thuộc tính đỉnh được lưu trữ cần phục hồi.
+
+Đầu tiên, phương thức kiểm tra xem chỉ mục có hợp lệ hay không. Nếu nó không hợp lệ, phương thức sẽ trả về mà không làm gì cả.
+
+Nếu chỉ mục là hợp lệ, phương thức lấy chỉ mục vật liệu và chỉ mục đỉnh cho ký tự bằng cách sử dụng thuộc tính "textInfo" của TextMeshPro.
+
+Sau đó, phương thức lấy các đỉnh được lưu trữ, màu đỉnh và UV từ mảng "m_cachedMeshInfoVertexData" cho chỉ mục vật liệu tương ứng.
+
+Sau đó, phương thức khôi phục lại các đỉnh, màu đỉnh và UV cho ký tự trong mảng "meshInfo" của TextMeshPro 
+bằng cách sử dụng các giá trị được lưu trữ.
+
+Cuối cùng, phương thức khôi phục lại thuộc tính đỉnh cuối cùng bằng cách hoán đổi nó. 
+Thuộc tính đỉnh cuối cùng được xác định là bộ đỉnh cuối cùng, màu đỉnh và UV trong chỉ mục vật liệu tương ứng.
+
+Phương thức này được gọi khi con trỏ được thả trên một đối tượng TextMeshPro. Thông thường, 
+nó được sử dụng để hoàn tác hiệu ứng của phương thức "SwapVertexData", phương thức này hoán đổi các đỉnh, 
+màu đỉnh và UV cho một ký tự cụ thể.*/
         void RestoreCachedVertexAttributes(int index)
         {
             if (index == -1 || index > m_TextMeshPro.textInfo.characterCount - 1) return;

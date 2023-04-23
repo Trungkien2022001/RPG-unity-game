@@ -5,6 +5,16 @@ using System.Collections;
 namespace TMPro.Examples
 {
 
+/* cách áp dụng hiệu ứng skew vào văn bản bằng gói TextMesh Pro (TMP). 
+TMP là một giải pháp xử lý văn bản cho phép tạo kiểu văn bản phong phú hơn so với thành phần văn bản mặc định của Unity. 
+Kịch bản này nằm trong không gian tên TMP Examples và có tên là SkewTextExample.*/
+
+/*Kịch bản bắt đầu bằng việc khai báo một thành phần TMP_Text riêng tư và một số biến công khai 
+có thể điều chỉnh trong cửa sổ Inspector của Unity. Biến VertexCurve là một AnimationCurve xác định hình dạng hiệu ứng skew 
+được áp dụng vào văn bản. Biến CurveScale điều khiển mức độ của đường cong, và biến ShearAmount điều khiển mức độ của hiệu ứng shear.*/
+
+
+
     public class SkewTextExample : MonoBehaviour
     {
 
@@ -16,18 +26,19 @@ namespace TMPro.Examples
         public float CurveScale = 1.0f;
         public float ShearAmount = 1.0f;
 
+//Phương thức Awake() khởi tạo thành phần TMP_Text bằng cách lấy nó từ đối tượng game mà kịch bản này đính kèm vào
         void Awake()
         {
             m_TextComponent = gameObject.GetComponent<TMP_Text>();
         }
 
-
+//Phương thức Start() bắt đầu một coroutine được gọi là WarpText(), áp dụng hiệu ứng skew vào văn bản theo thời gian.
         void Start()
         {
             StartCoroutine(WarpText());
         }
 
-
+//Phương thức CopyAnimationCurve() tạo ra một AnimationCurve mới và đặt các key của nó sao cho phù hợp với AnimationCurve đầu vào.
         private AnimationCurve CopyAnimationCurve(AnimationCurve curve)
         {
             AnimationCurve newCurve = new AnimationCurve();
@@ -43,6 +54,11 @@ namespace TMPro.Examples
         /// </summary>
         /// <param name="textComponent"></param>
         /// <returns></returns>
+
+        /*Coroutine WarpText() tạo ra lưới cho đối tượng văn bản và điền dữ liệu vào đối tượng TMP_TextInfo 
+        để có thể điều khiển văn bản. Sau đó, nó lặp qua từng ký tự trong văn bản, tính toán độ lệch mid-baseline của mỗi ký tự, 
+        áp dụng một độ lệch pivot để điều chỉnh điểm pivot, áp dụng hiệu ứng shear và tính toán góc quay cho mỗi ký tự dựa 
+        trên đường cong hoạt hình VertexCurve. Cuối cùng, coroutine đợi một khung hình để hoàn thành trước khi lặp lại vòng lặp.*/
         IEnumerator WarpText()
         {
             VertexCurve.preWrapMode = WrapMode.Clamp;

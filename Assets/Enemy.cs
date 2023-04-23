@@ -3,6 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*Đoạn code trên là một script trong Unity để điều khiển đối tượng Enemy. Nó bao gồm các hàm để xử lý sức khỏe, tấn công, 
+di chuyển, ẩn và xóa đối tượng Enemy. Các biến public health, speed và isFinish cho phép người dùng điều chỉnh thuộc tính của 
+đối tượng Enemy. Script cũng sử dụng các hàm trong Animator để chuyển đổi giữa các trạng thái như bị tấn công, bị đánh bại và 
+di chuyển. Ngoài ra, script sử dụng biến MOVE_ANIMATION để lưu tên của animation di chuyển, và spriteRenderer để ẩn đối tượng Enemy.*/
+
 public class Enemy : MonoBehaviour
 {
     Animator animator;
@@ -61,9 +66,4 @@ public class Enemy : MonoBehaviour
     {
         spriteRenderer.enabled = false;
     }
-
-
-
-
-
 }

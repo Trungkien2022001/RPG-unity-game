@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-
+/*Đoạn code trên định nghĩa một lớp script được gọi là TMP_TextEventCheck 
+dùng để kiểm tra các sự kiện xảy ra trên một đối tượng TMP_TextEventHandler được tham chiếu trong biến TextEventHandler*/
 namespace TMPro.Examples
 {
     public class TMP_TextEventCheck : MonoBehaviour
@@ -9,7 +10,9 @@ namespace TMPro.Examples
         public TMP_TextEventHandler TextEventHandler;
 
         private TMP_Text m_TextComponent;
-
+/*Trong phương thức OnEnable(), nếu TextEventHandler đã được cấu hình, đối tượng m_TextComponent sẽ được gán bằng đối tượng 
+TMP_Text được tham chiếu bởi TextEventHandler. Các sự kiện onCharacterSelection, onSpriteSelection, onWordSelection, onLineSelection, 
+và onLinkSelection của TextEventHandler được đăng ký với các phương thức tương ứng trong lớp TMP_TextEventCheck*/
         void OnEnable()
         {
             if (TextEventHandler != null)
@@ -25,7 +28,7 @@ namespace TMPro.Examples
             }
         }
 
-
+//Trong phương thức OnDisable(), các sự kiện đã được đăng ký trước đó sẽ bị gỡ bỏ.
         void OnDisable()
         {
             if (TextEventHandler != null)
@@ -38,7 +41,10 @@ namespace TMPro.Examples
             }
         }
 
-
+/*Các phương thức OnCharacterSelection(), OnSpriteSelection(), OnWordSelection(), OnLineSelection(), và OnLinkSelection() 
+được gọi khi các sự kiện tương ứng được kích hoạt trên TextEventHandler. Mỗi phương thức sẽ ghi lại thông tin về sự kiện đã xảy ra 
+bằng cách sử dụng phương thức Debug.Log(). Trong phương thức OnLinkSelection(), thông tin về liên kết được lấy từ đối tượng 
+m_TextComponent (nếu nó không null).*/
         void OnCharacterSelection(char c, int index)
         {
             Debug.Log("Character [" + c + "] at Index: " + index + " has been selected.");

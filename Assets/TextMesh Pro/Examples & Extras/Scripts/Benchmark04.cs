@@ -17,7 +17,11 @@ namespace TMPro.Examples
         private Transform m_Transform;
         //private TextMeshProFloatingText floatingText_Script;
         //public Material material;
-
+        
+/*Đoạn code trên thực hiện benchmarking của các phông chữ (font) bằng cách hiển thị chúng trên màn hình. 
+Nó cung cấp sự so sánh về hiệu năng giữa hai hệ thống phông chữ khác nhau: TextMesh Pro và TextMesh. 
+Nó cho phép người dùng thay đổi kích thước, khoảng cách giữa các chữ và kiểu hiển thị của văn bản để so sánh thời gian phản hồi 
+và hiệu suất của hai hệ thống phông chữ. Các thông số được cấu hình trong các biến của script.*/
 
         void Start()
         {

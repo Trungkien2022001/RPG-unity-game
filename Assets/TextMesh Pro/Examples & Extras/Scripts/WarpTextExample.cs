@@ -2,6 +2,20 @@
 using System.Collections;
 
 
+/*Đây là một ví dụ về kịch bản cho TextMeshPro trong Unity, cong văn bản theo đường cong hoạt hình.
+
+Kịch bản định nghĩa một AnimationCurve, xác định hình dạng của đường cong theo đó văn bản được uốn cong. 
+Nó cũng định nghĩa một vài tham số cho đường cong, bao gồm bội số góc, bội số tốc độ và tỷ lệ đường cong.
+
+Kịch bản sử dụng lớp TMP_Text để có được thành phần văn bản mà kịch bản được gắn vào. Sau đó, 
+nó tạo ra một lưới từ văn bản và cập nhật thông tin văn bản với dữ liệu có thể được điều khiển.
+
+Kế tiếp, kịch bản đi qua từng ký tự trong văn bản, xác định vị trí của nó liên quan đến ranh giới của lưới, 
+tính toán góc quay cho mỗi ký tự dựa trên đường cong hoạt hình và áp dụng phần bù để điều chỉnh điểm neo của mỗi ký tự. 
+Cuối cùng, nó áp dụng ma trận biến đổi cho mỗi đỉnh của mỗi ký tự, để uốn cong văn bản theo đường cong hoạt hình.
+
+Kịch bản bao gồm một coroutine để liên tục cập nhật lưới với vị trí mới của các đỉnh khi đường cong thay đổi.*/
+
 namespace TMPro.Examples
 {
 

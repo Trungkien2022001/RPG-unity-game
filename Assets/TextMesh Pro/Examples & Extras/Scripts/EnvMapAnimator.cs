@@ -9,6 +9,10 @@ public class EnvMapAnimator : MonoBehaviour {
     private TMP_Text m_textMeshPro;
     private Material m_material;
     
+    /*Đoạn code trên tạo một chuyển động xoay vòng cho một đối tượng TMP_Text. 
+    Nó sử dụng một ma trận truyền vào trong shader thông qua thuộc tính _EnvMatrix, 
+    để thay đổi ma trận này theo thời gian dựa trên vận tốc xoay được chỉ định bởi RotationSpeeds vector. 
+    Các vị trí và kích thước không thay đổi, chỉ hướng xoay của đối tượng thay đổi.*/
 
     void Awake()
     {

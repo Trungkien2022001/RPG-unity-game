@@ -4,7 +4,13 @@ using System.Collections;
 
 namespace TMPro.Examples
 {
+/*được sử dụng để tạo hiệu ứng rung lắc trên đối tượng văn bản TextMesh Pro (TMP) bằng cách ngẫu nhiên thay đổi vị trí của các đỉnh.
 
+Script bắt đầu bằng cách định nghĩa ba biến float công khai: AngleMultiplier, SpeedMultiplier và CurveScale. 
+Các biến này điều khiển độ mạnh của hiệu ứng rung lắc. Script cũng định nghĩa một biến TMP_Text riêng tư là m_TextComponent, được sử dụng để lưu trữ tham chiếu đến đối tượng văn bản đang được hoạt hóa, và một biến boolean là hasTextChanged.
+
+Script cũng định nghĩa một struct VertexAnim, được sử dụng để lưu trữ dữ liệu hoạt hình đã tính toán trước cho một số ký tự. 
+Struct này chứa ba biến float: angleRange, angle và speed.*/
     public class VertexJitter : MonoBehaviour
     {
 
@@ -24,12 +30,12 @@ namespace TMPro.Examples
             public float angle;
             public float speed;
         }
-
+//Phương thức Awake() được sử dụng để lấy tham chiếu đến đối tượng văn bản
         void Awake()
         {
             m_TextComponent = GetComponent<TMP_Text>();
         }
-
+//Phương thức OnEnable() và OnDisable() được sử dụng để đăng ký và hủy đăng ký cho sự kiện thay đổi văn bản.
         void OnEnable()
         {
             // Subscribe to event fired when text object has been regenerated.
@@ -41,13 +47,13 @@ namespace TMPro.Examples
             TMPro_EventManager.TEXT_CHANGED_EVENT.Remove(ON_TEXT_CHANGED);
         }
 
-
+//Phương thức Start() bắt đầu coroutine AnimateVertexColors(), hoạt hình màu đỉnh của đối tượng văn bản.
         void Start()
         {
             StartCoroutine(AnimateVertexColors());
         }
 
-
+// Phương thức ON_TEXT_CHANGED() được sử dụng để đặt hasTextChanged thành true khi đối tượng văn bản đã được tạo lại.
         void ON_TEXT_CHANGED(Object obj)
         {
             if (obj == m_TextComponent)
@@ -58,6 +64,15 @@ namespace TMPro.Examples
         /// Method to animate vertex colors of a TMP Text object.
         /// </summary>
         /// <returns></returns>
+
+        /*Coroutine AnimateVertexColors() đầu tiên cập nhật đối tượng văn bản bằng cách gọi ForceMeshUpdate(). 
+        Sau đó, nó tạo ra một mảng các struct VertexAnim để lưu trữ dữ liệu hoạt hình đã tính toán trước cho một số ký tự. 
+        Coroutine sau đó đi vào một vòng lặp vô hạn và kiểm tra xem văn bản đã thay đổi chưa. Nếu văn bản đã thay đổi, 
+        nó cập nhật bản sao của dữ liệu đỉnh cho đối tượng văn bản. Nếu không có ký tự nào trong văn bản, 
+        coroutine đợi một phần tư giây trước khi tiếp tục.
+        
+        Vòng lặp sau đó lặp qua từng ký tự hiển thị trong đối tượng văn bản và truy xuất dữ liệu hoạt hình đã tính toán trước cho ký tự đó. 
+        Sau đó, nó lấy chỉ số của vật liệu được sử dụng bởi*/
         IEnumerator AnimateVertexColors()
         {
 

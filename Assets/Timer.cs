@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/*Đoạn code trên có nhiệm vụ tạo ra một đối tượng Timer trong trò chơi. Timer này sẽ hiển thị thời gian đếm lùi hoặc đếm thời gian 
+lên tùy chọn, có thể có giới hạn thời gian đếm ngược. Timer cũng có thể định dạng hiển thị thời gian, cho phép lựa chọn định dạng 
+đếm thời gian từ dạng số nguyên đến dạng số thập phân. Đối tượng Timer hiển thị thời gian được thể hiện trên thành phần UI TextMeshProUGUI.*/
+
 public class Timer : MonoBehaviour
 {
     [Header("Component")]
