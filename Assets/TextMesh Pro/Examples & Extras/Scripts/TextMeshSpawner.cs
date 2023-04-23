@@ -77,3 +77,20 @@ namespace TMPro.Examples
 
     }
 }
+
+/*
+Đoạn code trên tạo ra văn bản nổi lên (floating text) trong trò chơi Unity. 
+Cụ thể hơn, nó sử dụng ba thành phần: TextMesh Pro, TextMesh, và TextMeshProFloatingText.
+
+Đầu tiên, đoạn code khai báo các biến và thiết lập giá trị ban đầu cho chúng. 
+Biến "SpawnType" và "NumberOfNPC" xác định loại văn bản nổi lên được tạo ra (TextMesh Pro hay TextMesh) 
+và số lượng văn bản nổi lên được tạo ra. Biến "TheFont" chứa phông chữ được sử dụng cho văn bản TextMesh.
+
+Sau đó, trong hàm Start(), vòng lặp for được sử dụng để tạo ra văn bản nổi lên. 
+Nếu giá trị của "SpawnType" là 0, văn bản TextMesh Pro được tạo ra. Nếu không, văn bản TextMesh được tạo ra. 
+Cả hai loại văn bản đều được đặt tại một vị trí ngẫu nhiên trên mặt phẳng và có kích thước chữ là 96. 
+Màu sắc của văn bản được đặt thành màu vàng và được đặt thành dấu chấm than ("!").
+
+Cuối cùng, "TextMeshProFloatingText" được thêm vào game object để làm cho văn bản nổi lên di chuyển lên trên và
+ biến mất sau một khoảng thời gian ngắn.
+*/

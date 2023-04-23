@@ -90,3 +90,17 @@ namespace TMPro.Examples
 
     }
 }
+
+/*
+Đây là một đoạn mã sử dụng trong Unity Engine để thực hiện một bài kiểm tra hiệu suất về hiển thị chữ trên màn hình. 
+Trong đoạn mã này, có một class được tạo ra để thực hiện bài kiểm tra, nó được đặt tên là Benchmark03.
+Class này có một số thuộc tính, bao gồm NumberOfSamples để chỉ số lần lặp lại thực hiện bài kiểm tra và Benchmark để lựa chọn kiểu kiểm tra.
+
+Trong phần Start() của class, đoạn mã sẽ tạo ra một Font Asset mới dựa trên font đầu vào được chỉ định trong SourceFont, 
+sau đó sẽ lặp lại kiểm tra một số lần tương ứng với NumberOfSamples được chỉ định. 
+Trong mỗi lần kiểm tra, đoạn mã sẽ tạo ra một GameObject mới, 
+sau đó sử dụng đối tượng TextMeshPro hoặc TextMesh để hiển thị chữ trên màn hình. 
+Cách thức hiển thị chữ trên màn hình sẽ được lựa chọn dựa trên giá trị của thuộc tính Benchmark. 
+Nếu Benchmark được lựa chọn là TEXTMESH_BITMAP thì chữ sẽ được hiển thị bằng cách sử dụng đối tượng TextMesh. 
+Các giá trị khác của Benchmark sẽ sử dụng đối tượng TextMeshPro để hiển thị chữ trên màn hình.
+*/

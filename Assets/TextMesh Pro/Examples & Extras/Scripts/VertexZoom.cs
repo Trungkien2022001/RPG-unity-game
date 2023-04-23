@@ -190,3 +190,23 @@ namespace TMPro.Examples
 
     }
 }
+
+/*
+Đây là một đoạn mã trong Unity, được sử dụng để làm cho chữ trong TextMeshPro có hiệu ứng phóng to nhỏ khi hiển thị trên màn hình. 
+
+Code bao gồm:
+
+- Một số biến float AngleMultiplier, SpeedMultiplier, CurveScale để tinh chỉnh hiệu ứng.
+- Khai báo các biến private TMP_Text m_TextComponent và hasTextChanged.
+- Trong phương thức Awake (), m_TextComponent được khởi tạo bằng cách tìm kiếm và gán TextMeshPro.
+- Trong phương thức OnEnable (), một sự kiện được đăng ký để gọi phương thức ON_TEXT_CHANGED khi đối tượng văn bản được tạo lại.
+- Trong phương thức OnDisable (), sự kiện được hủy đăng ký để ngừng gọi phương thức ON_TEXT_CHANGED.
+- Trong phương thức Start (), coroutine AnimateVertexColors () được khởi chạy để thực hiện hiệu ứng phóng to nhỏ.
+- Trong phương thức ON_TEXT_CHANGED (), nếu đối tượng văn bản thay đổi, hasTextChanged được thiết lập thành true.
+- Phương thức AnimateVertexColors() dùng để tạo hiệu ứng phóng to nhỏ cho chữ.
+
+- Tạo ma trận để xác định hiệu ứng.
+- Lấy thông tin về các vertex của các ký tự trong đối tượng văn bản.
+- Tính toán giá trị mới cho các vertex, tạo hiệu ứng phóng to nhỏ bằng cách sử dụng ma trận đã tạo.
+- Đợi một khoảng thời gian rồi tiếp tục. Quá trình lặp lại với khoảng thời gian này.
+*/

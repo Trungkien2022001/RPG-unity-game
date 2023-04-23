@@ -82,3 +82,34 @@ namespace TMPro.Examples
 
     }
 }
+
+
+/*
+Đoạn code trên là một script được viết bằng ngôn ngữ lập trình C# trong Unity Engine. 
+Script này được sử dụng để tạo hiệu ứng đổi màu chữ chạy liên tục cho văn bản của TextMeshPro (TMP_Text).
+
+Đầu tiên, script khai báo namespace TMPro.Examples và lớp VertexColorCycler, kế thừa từ MonoBehaviour. 
+Nó có một biến m_TextComponent kiểu TMP_Text để tham chiếu đến đối tượng TMP_Text được gán vào script.
+
+Hàm Awake() được gọi khi script được khởi tạo. Nó sẽ tìm kiếm đối tượng TMP_Text gắn vào script và 
+gán nó cho biến m_TextComponent thông qua hàm GetComponent().
+
+Hàm Start() được gọi khi đối tượng được khởi tạo. 
+Nó sẽ gọi IEnumerator AnimateVertexColors() bằng hàm StartCoroutine() để bắt đầu vòng lặp vô hạn của hiệu ứng đổi màu chữ.
+
+Trong IEnumerator AnimateVertexColors(), trước khi bắt đầu vòng lặp, m_TextComponent.ForceMeshUpdate() 
+được gọi để đảm bảo rằng bảng điểm của văn bản được tạo ra ngay lập tức để có thể sửa đổi từ đầu.
+
+Trong vòng lặp, đoạn code lấy thông tin về văn bản được gán vào m_TextComponent, 
+lấy ra một ký tự hiện tại và đổi màu của các đỉnh của ký tự đó.
+
+Các màu sắc mới được tạo bằng hàm Random.Range() và được áp dụng vào tất cả bốn đỉnh của ký tự hiện tại. 
+Sau đó, hàm UpdateVertexData() được gọi để cập nhật dữ liệu đỉnh của văn bản. 
+Cuối cùng, currentCharacter được cập nhật để chuyển sang ký tự tiếp theo, và vòng lặp sẽ tiếp tục chạy.
+
+Hàm WaitForSeconds() được sử dụng để chờ một khoảng thời gian nhất định trước khi tiếp tục chạy vòng lặp. 
+Thời gian chờ này được thiết lập ở giá trị 0.05f cho mỗi ký tự và 0.25f nếu không có ký tự nào trong văn bản.
+
+Vì script này được thực hiện theo cơ chế Coroutine, nó có thể được tạm dừng và tiếp tục thực hiện từ điểm dừng đó, 
+đồng thời không làm đóng ứng giao diện người dùng của ứng dụng.
+*/

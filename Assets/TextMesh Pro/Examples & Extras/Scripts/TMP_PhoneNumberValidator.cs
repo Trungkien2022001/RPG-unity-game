@@ -103,3 +103,12 @@ namespace TMPro
         }
     }
 }
+
+/*
+Đây là một đoạn mã trong Unity được sử dụng để xác thực nhập liệu của số điện thoại theo định dạng (800) 555-1212. 
+Đoạn mã này là một lớp được kế thừa từ lớp TMP_InputValidator và được đặt tên là TMP_PhoneNumberValidator. 
+Khi nhập liệu số điện thoại, hàm Validate() trong lớp này sẽ được gọi để kiểm tra tính hợp lệ của ký tự 
+được nhập vào và định dạng số điện thoại. Nếu ký tự không hợp lệ hoặc định dạng không đúng, hàm sẽ trả về giá trị null. 
+Nếu ký tự hợp lệ và định dạng đúng, hàm sẽ trả về ký tự đó và thêm nó vào chuỗi số điện thoại đã nhập. 
+Đoạn mã này cũng chứa các lệnh để định dạng số điện thoại đúng cách bao gồm các ký tự như dấu ngoặc đơn, dấu cách và dấu gạch ngang.
+*/

@@ -155,3 +155,24 @@ namespace TMPro.Examples
 
     }
 }
+
+/*
+Đây là một đoạn mã trong Unity được sử dụng để chọn văn bản trong một đối tượng TextMeshPro. 
+Nó được phân loại trong namespace TMPro.Examples. 
+Đối tượng này sử dụng giao diện IPointerEnterHandler và IPointerExitHandler để phản hồi khi con trỏ chuột đi vào và rời khỏi đối tượng. 
+
+Trong đối tượng TextMeshPro, đoạn mã sử dụng TMP_TextUtilities để tìm vị trí kí tự, từ và liên kết được chọn. 
+Nếu kí tự hoặc từ được chọn, đoạn mã sẽ tô màu các vertex của chúng với một màu ngẫu nhiên. 
+Nếu liên kết được chọn, đoạn mã sẽ lưu trữ thông tin liên kết và có thể thực hiện một hành động khi người dùng nhấn vào liên kết đó.
+
+Có một số biến được sử dụng trong đoạn mã này, bao gồm: 
+
+- m_TextMeshPro: Đối tượng TextMeshPro được chọn để chọn văn bản.
+- m_Camera: Camera được sử dụng để tính toán vị trí của con trỏ chuột.
+- m_isHoveringObject: Một cờ được sử dụng để xác định xem con trỏ chuột có đang nằm trên đối tượng hay không.
+- m_selectedLink: Một số nguyên được sử dụng để lưu trữ liên kết đang được chọn (nếu có).
+- m_lastCharIndex: Một số nguyên được sử dụng để lưu trữ vị trí kí tự cuối cùng được chọn (nếu có).
+- m_lastWordIndex: Một số nguyên được sử dụng để lưu trữ vị trí từ cuối cùng được chọn (nếu có).
+
+Đoạn mã này được thực thi trong phương thức LateUpdate(), được gọi sau khi tất cả các phương thức Update() khác đã được gọi trong mỗi khung hình.
+*/
