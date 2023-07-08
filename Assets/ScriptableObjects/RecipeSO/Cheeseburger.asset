@@ -17,3 +17,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dc7206a372e873e44945cb9155f8c1ba, type: 2}
   - {fileID: 11400000, guid: 8119098929e2ba14baf2c6ad491cf05e, type: 2}
   recipeName: Cheeseburger
+  price: 15

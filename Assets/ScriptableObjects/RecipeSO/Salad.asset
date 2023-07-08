@@ -16,3 +16,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: caea38706d21dfa40a744b22f2f86434, type: 2}
   - {fileID: 11400000, guid: 455ac2b492a3c3442bf926b427bb40d2, type: 2}
   recipeName: Salad
+  price: 15
